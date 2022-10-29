@@ -1,24 +1,24 @@
-li {
+.navbar li {
   list-style: none;
   font-weight: bold;
   padding: 20px;
 }
 
-li:hover {
+.navbar li:hover {
   background-color: rgb(74, 74, 134);
   border-radius: 0 0 10px 10px;
 }
 
-a {
+.navbar a {
   color: white;
   text-decoration: none;
 }
 
-a:visited {
+.navbar a:visited {
   color: white;
 }
 
-h1 {
+.navbar h1 {
   margin: 0;
 }
 
@@ -38,7 +38,7 @@ h1 {
   justify-content: end;
 }
 
-ul {
+.navbar ul {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
