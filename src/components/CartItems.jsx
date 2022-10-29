@@ -2,18 +2,18 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 const CartItems = (props) => {
-  const {items} = props || [];
+  const {items} = props;
 
   return (
     <table>
-      <th>
+      <thead>
         <tr>
           <td>#</td>
           <td>Item name</td>
           <td>Quantity</td>
           <td>Price</td>
         </tr>
-      </th>
+      </thead>
       <tbody>
         {items.map((item, index) => (
           <tr key={item.id}>
