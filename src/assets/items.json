@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Toy",
+      "price": 100
+    },
+    {
+      "id": "2",
+      "name": "Doll",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Book",
+      "price": 80
+    },
+    {
+      "id": "4",
+      "name": "Pen",
+      "price": 70
+    }
+  ]
+}
