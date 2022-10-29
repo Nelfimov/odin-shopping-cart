@@ -1,0 +1,14 @@
+div.items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-content: center;
+}
+
+div.item-card {
+  width: fit-content;
+  padding: 50px 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+}
