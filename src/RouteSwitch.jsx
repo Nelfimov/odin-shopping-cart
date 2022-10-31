@@ -6,14 +6,16 @@ import Cart from './components/Cart';
 import propTypes from 'prop-types';
 
 const RouteSwitch = (props) => {
-  const {addToCart, cart} = props;
+  const {addToCart, deleteFromCart, cart} = props;
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App addToCart={addToCart} />} />
         <Route path="/about" element={<About />} />
-        <Route path="/cart" element={<Cart items={cart.items} />} />
+        <Route
+          path="/cart"
+          element={<Cart cart={cart} deleteFromCart={deleteFromCart} />} />
       </Routes>
     </BrowserRouter>
   );
@@ -21,6 +23,7 @@ const RouteSwitch = (props) => {
 
 RouteSwitch.propTypes = {
   addToCart: propTypes.func.isRequired,
+  deleteFromCart: propTypes.func.isRequired,
   cart: propTypes.object.isRequired,
 };
 

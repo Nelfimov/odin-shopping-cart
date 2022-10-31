@@ -3,18 +3,19 @@ import propTypes from 'prop-types';
 import CartItems from './CartItems';
 
 const Cart = (props) => {
-  const {items} = props;
+  const {cart, deleteFromCart} = props;
 
   return (
     <div id='cart' className='cart-container'>
       <h2>Cart summary</h2>
-      <CartItems items={items} />
+      <CartItems cart={cart} deleteFromCart={deleteFromCart} />
     </div>
   );
 };
 
 Cart.propTypes = {
-  items: propTypes.arrayOf(propTypes.shape),
+  cart: propTypes.object.isRequired,
+  deleteFromCart: propTypes.func.isRequired,
 };
 
 export default Cart;
